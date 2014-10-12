@@ -41,4 +41,11 @@ feature "User signs in" do
 		expect(page).to have_content("Welcome, Sam")
 	end
 
+	scenario "with incorrect credentials" do 
+		visit '/'
+		expect(page).not_to have_content("Welcome, Sam")
+		sign_in('samsam', 'dog')
+		expect(page).not_to have_content("Welcome, Sam")
+	end
+
 end
