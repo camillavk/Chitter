@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Chitter</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
@@ -11,6 +12,10 @@
 			<div id='container'>
 				<%= yield %>
 			</div>
+		</div>
+		<div class="push"></div>
+		<div class="footer">
+			<%= partial :footer %>
 		</div>
 </body>
 </html>

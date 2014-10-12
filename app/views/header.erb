@@ -2,6 +2,7 @@
 	<div id="logo">
 		<a href='/'>Chitter</a>
 	</div>
+	<a href="/messages/new" class="button">Add message</a>
 	<% if current_user %>
 		Welcome, <%= current_user.name %>
 		<form method="post" action="/sessions">

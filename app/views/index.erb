@@ -1,8 +1,8 @@
 <h1>Welcome to Chitter</h1>
 
-Messages:
+<p>Current messages:</p>
 <ul>
 	<% @messages.each do |message| %>
-		<li><%= message.title %></li>
+		<%= partial :message, :locals => {:message => message } %>
 	<% end %>
 </ul>
