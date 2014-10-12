@@ -14,8 +14,7 @@ module SessionHelpers
 		click_button "Sign up"
 	end
 
-	def sign_in(username = 'samsam', 
-							password = 'cat')
+	def sign_in(username, password)
 	visit '/sessions/new'
 	fill_in :username, :with => username
 	fill_in :password, :with => password
