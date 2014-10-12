@@ -9,7 +9,7 @@ DataMapper.setup(:default, "postgres://localhost/Chitter_#{env}")
 
   DataMapper.auto_upgrade!
 
-  # start the server if ruby file executed directly
 get '/' do 
+	@messages = Message.all
 	erb :index
 end
