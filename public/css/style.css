@@ -59,26 +59,31 @@ header {
     margin: auto 0;
   }
 
-  header a{
+  a{
     color: white;
   }
 
-  header #logo {
+  #logo {
     display: flex;
     margin-right: 20px;
   }
 
-  header #user-messages {
+/*  #signup {
+    display: flex;
+    float: right;
+  }*/
+
+  #signup {
     flex: 1;
     -webkit-flex: 1;
     text-align: right;
   }
 
-  header #user-messages > * {
+  #signup > * {
     display: inline-block;
   }
 
-  header #user-messages #welcome-message{
+  #signup #welcome-message{
     font-size: 1em;
   }
 /*
