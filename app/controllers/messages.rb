@@ -6,7 +6,7 @@ post '/messages' do
 								:password_confirmation => "cat")
 	title = params["title"]
 	text = params["text"].to_s
-	Message.create(:title => title, :text => text)
+	Message.create(:title => title, :text => text, :user_id => current_user.id)
 	redirect to('/')
 end
 

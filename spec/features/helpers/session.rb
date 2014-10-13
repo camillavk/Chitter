@@ -21,4 +21,11 @@ module SessionHelpers
 	click_button "Sign in"
 	end
 
+	def add_message(title, text)
+		visit 'messages/new'
+		fill_in 'title', :with => title
+		fill_in 'text', :with => text
+		click_button "Add message"
+	end
+
 end
