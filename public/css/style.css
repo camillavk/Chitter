@@ -83,9 +83,16 @@ header {
     display: inline-block;
   }
 
-  #signup #welcome-message{
+  #signup {
     font-size: 1em;
   }
+
+/*  #welcome-message {
+    flex: 1;
+    -webkit-flex: 1;
+    text-align: right;
+    display: inline-block;
+  }*/
 /*
 h1{
   font-size: 4em;
